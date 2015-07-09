@@ -28,7 +28,7 @@ $count = the number of entries to return.
 $offset = the entry number to start at when returning a set of data
 */
 
-public function call($requestType, $filters=null,$params=null, $category=null, $instance=null, $subcategory=null, $subcategoryInstance=null, $subSubcategory=null, $count=null, $offset=null) {
+public function call($requestType,$params=null, $category=null, $instance=null, $subcategory=null, $subcategoryInstance=null, $subSubcategory=null, $count=null, $offset=null, $filters=null) {
 
 //adds category to endpoint URL if present
 if (strlen($category)>0){
